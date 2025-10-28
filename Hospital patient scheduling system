@@ -1,0 +1,120 @@
+   
+FACULTY OF ENGINEERING DESIGN AND TECHNOLOGY  
+  
+  GROUP 2 
+  GROUP MEMBERS: 
+                                   WANA CALVIN KLEIN                                                  S24B13/009
+                                   GENZA RONALD                                                       S24B13/078 
+                                   KASAIJA KEITH                                                      S24B13/081
+                                   HOPE MADAYA                                                        S24B13/052
+                                   GABRIELLA ANGEL LUKYAMUZI                                          M24B13/014 
+                                   DOROTHY MWIZA                                                      S25B13/093 
+                                   BOB AHEBWA.                                                        S24B13/100 
+                                   RAYMOND JAMES   M                                                  M24B13/047 
+                                   LEEBAN MOHAMMAD                                                    S24B13/058
+                                  IVAN TWEYONGYERE                                                    S24B13/006 
+COURSE:  BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY (BSIT).  
+COURSE UNIT: DATABASE PROGRAMMING 
+LECTURER: MR. MARTIN KUBANJA 
+  
+
+Hospital Patient Scheduling System
+What is it all about?
+This application enables patients to book appointments with hospitals based on proximity and medical department needs. It streamlines the scheduling process, reduces delays, and ensures efficient allocation of medical resources.
+Current Business Processes
+Phone Booking: Patients call hospital reception to inquire about available slots.
+Manual Tracking: Staff uses paper or spreadsheets to manage doctor schedules.
+Limited Availability Insight: Patients lack real-time access to doctor availability.
+Delayed Confirmation: Appointments are confirmed via follow-up calls or emails.
+Problem Statement
+The current way hospitals handle appointments is slow and confusing. Patients often get double-booked, can't see which doctors are free, and wait a long time for confirmation. This causes frustration and wastes time for both patients and staff.
+
+Existing Electronic Systems.
+Yes, most hospitals use an Electronic Hospital Management System (EHMS).
+What does it majorly do?
+	Stores patient records
+	Manages appointments and queues
+	Tracks lab tests and prescriptions
+	Handles billing and insurance
+	Controls inventory
+	Generates reports for administration
+
+Major Clients
+Patients: Primary users booking appointments.
+Doctors & Nurses: Internal users managing schedules.
+Administrative Staff: Oversee operations and confirmations.
+Insurance Companies: Process claims and billing.
+Government Health Authorities: Monitor compliance and reporting.
+
+Collaborating Agencies
+	Ministry of Health / Public Health Departments
+	Insurance Companies / National Health Insurance Schemes
+	Medical Schools & Universities
+	Laboratories & Diagnostic Centers
+	Emergency Services
+	International Health Bodies (WHO, Red Cross, NGOs)
+
+Contribution to Data Management:
+To improve data management:
+	Implement centralized database with controlled access.
+	Enable real-time updates for appointments and doctor availability.
+	Integrate with insurance and government systems.
+	Use data backup and recovery protocols.
+	Apply encryption and role-based access control.
+	Automate reporting for decision-making.
+Proposed Business Processes of the System:
+The Hospital Patient Scheduling System will automate and streamline the way hospitals manage appointments, doctor availability, and patient interactions. Below are the key processes the system will handle:
+1. Patient Registration
+•	Patients create an account by entering personal details such as name, contact information, date of birth, and insurance provider.
+•	The system validates the data and stores it securely in the database.
+2. Doctor Profile Management
+•	Doctors register and update their profiles with specialization, department, working hours, and availability.
+•	Hospital administrators can assign doctors to departments and update their schedules.
+3. Appointment Booking
+•	Patients log in to view available doctors by department, location, and time slots.
+•	They select a doctor and book an appointment based on availability.
+•	The system prevents double bookings and confirms the appointment instantly
+4. Real-Time Availability Tracking
+•	Doctors update their availability daily or weekly.
+•	The system displays real-time availability to patients and staff.
+•	Any changes trigger automatic updates across the platform.
+5. Appointment Confirmation & Notifications
+•	Once booked, the system sends confirmation via SMS or email to the patient.
+•	Reminders are sent 24 hours before the appointment.
+•	Doctors receive a daily schedule of upcoming appointments.
+6. Reporting & Analytics
+•	The system generates reports on appointment trends, doctor workload, patient visits, and cancellations.
+•	These reports help hospital management make data-driven decisions.
+7. Data Sharing & Collaboration
+•	The system integrates with government health databases, insurance companies, and emergency services.
+•	It allows secure sharing of patient data when authorized.
+8. Security & Audit Trail
+•	All actions (bookings, cancellations, updates) are logged.
+•	Role-based access ensures only authorized users can view or edit sensitive data.
+•	Data encryption protects patient privacy.
+
+
+
+The Entities and their Relationships 
+Entity	Attributes
+Patient	Patient ID (PK), Name, CheckInTime, Checkout Time, Phone, Address, Email
+Doctor	Doctor ID (PK), Name, Specialization, Phone, Email, Department ID (FK)
+Department	Department ID (PK), Name, Location
+Appointment	Appointment ID (PK), Date, Time, Location, Department ID (FK), Doctor ID (FK), Patient ID (FK)
+Hospital	Hospital ID (PK), Name, Location, Contact
+
+Rules
+	A patient can be treated by multiple doctors  (1:M)
+	A doctor treats one to many patients. (1:M)
+	A patient can make one or many appointments. (1:M)
+	An appointment can be made by only one patient. (1:1) 
+	A department can have one to many doctors. (1:M)
+	A doctor can only belong to one department. (1:1)
+	A hospital can have one or many departments. (1:M)  
+	Patients should be uniquely identified by Patient ID. 
+	Appointments can be scheduled according to the nearest location of the patient to the nearest hospital.
+	The system can have a set limit for the number of appointments a specific doctor can have in a day. This will help to ensure order and reduce work over load for the doctors.
+
+
+ 
+
