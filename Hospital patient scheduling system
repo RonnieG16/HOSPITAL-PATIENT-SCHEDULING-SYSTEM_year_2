@@ -31,6 +31,7 @@ The current way hospitals handle appointments is slow and confusing. Patients of
 
 Existing Electronic Systems.
 Yes, most hospitals use an Electronic Hospital Management System (EHMS).
+
 What does it majorly do?
 	Stores patient records
 	Manages appointments and queues
@@ -62,37 +63,44 @@ To improve data management:
 	Use data backup and recovery protocols.
 	Apply encryption and role-based access control.
 	Automate reporting for decision-making.
+
 Proposed Business Processes of the System:
 The Hospital Patient Scheduling System will automate and streamline the way hospitals manage appointments, doctor availability, and patient interactions. Below are the key processes the system will handle:
 1. Patient Registration
 •	Patients create an account by entering personal details such as name, contact information, date of birth, and insurance provider.
 •	The system validates the data and stores it securely in the database.
+
 2. Doctor Profile Management
 •	Doctors register and update their profiles with specialization, department, working hours, and availability.
 •	Hospital administrators can assign doctors to departments and update their schedules.
+
 3. Appointment Booking
 •	Patients log in to view available doctors by department, location, and time slots.
 •	They select a doctor and book an appointment based on availability.
 •	The system prevents double bookings and confirms the appointment instantly
+
 4. Real-Time Availability Tracking
 •	Doctors update their availability daily or weekly.
 •	The system displays real-time availability to patients and staff.
 •	Any changes trigger automatic updates across the platform.
+
 5. Appointment Confirmation & Notifications
 •	Once booked, the system sends confirmation via SMS or email to the patient.
 •	Reminders are sent 24 hours before the appointment.
 •	Doctors receive a daily schedule of upcoming appointments.
+
 6. Reporting & Analytics
 •	The system generates reports on appointment trends, doctor workload, patient visits, and cancellations.
 •	These reports help hospital management make data-driven decisions.
+
 7. Data Sharing & Collaboration
 •	The system integrates with government health databases, insurance companies, and emergency services.
 •	It allows secure sharing of patient data when authorized.
+
 8. Security & Audit Trail
 •	All actions (bookings, cancellations, updates) are logged.
 •	Role-based access ensures only authorized users can view or edit sensitive data.
 •	Data encryption protects patient privacy.
-
 
 
 The Entities and their Relationships 
